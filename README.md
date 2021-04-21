@@ -1,4 +1,4 @@
-# RbenvOpen3
+# ROpen3
 
 Adds `rbenv` compatibility to the `Open3` suite of process tools.
 
@@ -7,7 +7,7 @@ Adds `rbenv` compatibility to the `Open3` suite of process tools.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'rbenv-open3'
+gem 'ropen3'
 ```
 
 And then execute:
@@ -19,12 +19,12 @@ bundle install
 Or install it yourself as:
 
 ```gem
-gem install rbenv-open3
+gem install ropen3
 ```
 
 ## Usage
 
-Used in much the same manner as `Open3`.
+Used in much the same manner as `Open3`, sort of.
 
 ## Development
 

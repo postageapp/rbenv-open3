@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-require_relative './lib/rbenv_open3/version'
+require_relative './lib/ropen3/version'
 
 Gem::Specification.new do |spec|
-  spec.name = 'rbenv_open3'
-  spec.version = RbenvOpen3.version
+  spec.name = 'ropen3'
+  spec.version = ROpen3.version
   spec.authors = [ 'Scott Tadman' ]
   spec.email = %w[ tadman@postageapp.com ]
 

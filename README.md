@@ -82,5 +82,6 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the RbenvPopen3 project's codebases, issue trackers,
-chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/tadman/rbenv_popen3/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the ROpen3 project's codebases, issue trackers,
+chat rooms and mailing lists is expected to follow the
+[code of conduct](https://github.com/tadman/rbenv_popen3/blob/master/CODE_OF_CONDUCT.md).

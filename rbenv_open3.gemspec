@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
 
   spec.summary = 'Run commands in an rbenv environment'
   spec.description = 'Wrapper around Open3.popen3 with rbenv support'
-  spec.homepage = 'https://github.com/postageapp/rbenv-open3'
+  spec.homepage = 'https://github.com/postageapp/ropen3'
   spec.license = 'MIT'
   spec.required_ruby_version = Gem::Requirement.new('>= 2.4.0')
 

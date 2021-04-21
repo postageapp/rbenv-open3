@@ -72,7 +72,7 @@ push git commits and the created tag, and push the `.gem` file to [rubygems.org]
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at
-https://github.com/postageapp/rbenv-popen3. This project is intended to be
+https://github.com/postageapp/ropen3. This project is intended to be
 a safe, welcoming space for collaboration, and contributors are expected to
 adhere to the [code of conduct](https://github.com/tadman/rbenv_popen3/blob/master/CODE_OF_CONDUCT.md).
 

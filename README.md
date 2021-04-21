@@ -24,7 +24,16 @@ gem install ropen3
 
 ## Usage
 
-Used in much the same manner as `Open3`, sort of.
+To use ROpen3, establish the required version and `Gemfile` parameters, then
+issue one or more `popen3` operations:
+
+```ruby
+ro = ROpen3.new(version: '2.3.3')
+
+ro.popen3('gem env') do |_sin, sout, serr, proc|
+  print sout.read
+end
+```
 
 ## Development
 

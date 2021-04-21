@@ -13,6 +13,8 @@ class ROpen3
     @gemfile = gemfile
 
     @env = ROpen3::Environment.env(version: version, gemfile: gemfile)
+
+    yield(self) if (block_given?)
   end
 
   def popen3(*cmd, &block)

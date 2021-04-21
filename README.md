@@ -35,6 +35,28 @@ ro.popen3('gem env') do |_sin, sout, serr, proc|
 end
 ```
 
+This can also be done using a block style:
+
+```ruby
+ROpen3.new(version: '2.3.3') do |ro|
+  ro.popen3('gem env') do |_sin, sout, serr, proc|
+    print sout.read
+  end
+end
+```
+
+All [`popen3`](https://rubyapi.org/3.0/o/open3#method-i-popen3) options,
+including environment variable overrides, are supported as these are forwarded
+through:
+
+```ruby
+ROpen3.new(version: '2.3.3') do |ro|
+  ro.popen3({ 'VERBOSE' => '1' }, 'example', binmode: true) do |_sin, sout, serr, proc|
+    print sout.read
+  end
+end
+```
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then,

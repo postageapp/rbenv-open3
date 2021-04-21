@@ -1,6 +1,8 @@
 # ROpen3
 
-Adds `rbenv` compatibility to the `Open3` suite of process tools.
+Adds [`rbenv`](https://github.com/sstephenson/rbenv) compatibility to the
+`Open3` suite of process tools for easier instantiation of alternate Ruby
+versions from a Ruby parent process.
 
 ## Installation
 

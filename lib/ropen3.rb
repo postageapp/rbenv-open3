@@ -12,17 +12,14 @@ class ROpen3
     @version = version
     @gemfile = gemfile
 
-    @env = {
-      'RBENV_VERSION' => @version,
-      'BUNDLE_GEMFILE' => @gemfile
-    }.freeze
+    @env = ROpen3::Environment.env(version: version, gemfile: gemfile)
   end
 
   def popen3(*cmd, &block)
     env_arg = @env.merge(
+      # Pull off optional environment argument
       case (cmd.first)
       when Hash
-        # Pull off environment argument
         cmd.shift
       else
         { }
@@ -38,3 +35,5 @@ class ROpen3
     end
   end
 end
+
+require_relative './ropen3/environment'
